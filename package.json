@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/rxseger/homebridge-pwm-fan.git"
+    "url": "git://github.com/Tauk1/homebridge-pwm-fan.git"
   },
   "keywords": [
     "homebridge-plugin",
