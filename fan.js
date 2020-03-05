@@ -83,7 +83,17 @@ class FanPlugin
     //console.log('setRotationSpeed',speed);
     // scale speed by duty cycle
     this.dutycycle = 0|(speed / 100 * 255);
-    if (this.dutycycle < this.min_dutycycle) this.dutycycle = this.min_dutycycle; // clamp to minimum TODO: return error to user if can't go this low?
+    if (this.dutycycle < this.min_dutycycle) this.dutycycle = this.min_dutycycle; 
+    const OnOff = new Gpio( '4', 'out' );
+    if (speed = 0) {
+        let OnOff = true;
+     } else {
+	      let OnOff = false;
+      }
+    
+    
+    
+    // clamp to minimum TODO: return error to user if can't go this low?
     //console.log('dutycycle',this.dutycycle);
     this._relaunchHelper();
 
